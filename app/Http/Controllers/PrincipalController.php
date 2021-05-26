@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class PrincipalController extends Controller
 {
     function principal() {
-        return 'Controler: Principal';
+        return view('site.principal'); //Nomemclatura: subdiretorio.nome-da-view
     }
 }

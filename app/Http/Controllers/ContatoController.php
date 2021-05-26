@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class ContatoController extends Controller
 {
     function contato() {
-        return 'Controler: Contato';
+        return view('site.contato'); //Nomemclatura: subdiretorio.nome-da-view
     }
 }

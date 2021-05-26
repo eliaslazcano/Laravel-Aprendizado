@@ -7,6 +7,6 @@ use Illuminate\Http\Request;
 class SobreNosController extends Controller
 {
     function sobreNos() {
-        return 'Controler: SobreNos';
+        return view('site.sobre-nos'); //Nomemclatura: subdiretorio.nome-da-view
     }
 }
