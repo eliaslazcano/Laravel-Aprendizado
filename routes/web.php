@@ -22,3 +22,8 @@ Route::prefix('/app')->group(function () {
     Route::get('/fornecedores', function () { return 'Fornecedores'; })->name('app.fornecedores');
     Route::get('/produtos', function () { return 'Produtos'; })->name('app.produtos');
 });
+
+Route::redirect('/formulario', '/contato'); //Redirecionamento via URL
+Route::get('/emcontato', function () { //Redirecionamento por nome da rota
+    return redirect()->route('site.contato');
+});
