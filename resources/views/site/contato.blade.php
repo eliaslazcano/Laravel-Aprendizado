@@ -9,6 +9,7 @@
 </head>
 <body>
 <h1>View "contato"</h1>
+<h2>Assunto: {{$assunto}}</h2>
 <div>
     <p>Menu de navegação</p>
     <ul>
@@ -16,7 +17,7 @@
             <a href="{{ route('site.index') }}">Principal</a>
         </li>
         <li>
-            <a href="{{ route('site.contato') }}">Contato</a>
+            <a href="{{ route('site.contato', array('assunto' => 'Elias Neto')) }}">Contato</a>
         </li>
         <li>
             <a href="{{ route('site.sobrenos') }}">Sobre Nós</a>

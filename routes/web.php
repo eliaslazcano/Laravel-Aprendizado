@@ -14,8 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'PrincipalController@principal')->name('site.index'); //Nomenclatura: Controller@action
-Route::get('/contato', 'ContatoController@contato')->name('site.contato');
+Route::get('/contato/{assunto}', 'ContatoController@contato')->name('site.contato');
 Route::get('/sobre-nos', 'SobreNosController@sobreNos')->name('site.sobrenos');
+Route::get('/comentario/{nomecompleto}/{idade}', function ($nome, $idade) {
+    var_dump([$nome, $idade]);
+});
 
 Route::prefix('/app')->group(function () {
     Route::get('/clientes', function () { return 'Clientes'; })->name('app.clientes'); //URL: /app/clientes

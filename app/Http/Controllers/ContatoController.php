@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ContatoController extends Controller
 {
-    function contato() {
-        return view('site.contato'); //Nomemclatura: subdiretorio.nome-da-view
+    function contato($assunto) {
+        return view('site.contato', array('assunto' => $assunto)); //Nomemclatura: subdiretorio.nome-da-view
     }
 }
