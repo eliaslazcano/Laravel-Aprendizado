@@ -22,6 +22,10 @@
             <a href="{{ route('site.sobrenos') }}">Sobre Nós</a>
         </li>
     </ul>
+
+    <!-- Colocando assets na página: -->
+    <img src="img/vue-logo.png" alt="Vue Logo" width="64" height="64"> <!-- Errado -->
+    <img src="{{ asset('img/vue-logo.png') }}" alt="Vue Logo" width="64" height="64"> <!-- Correto -->
 </div>
 </body>
 </html>
