@@ -1,4 +1,5 @@
 <?php
+//Execute: php artisan db:seed
 
 use Illuminate\Database\Seeder;
 
@@ -11,6 +12,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $this->call(UsersTableSeeder::class);
+        $this->call(FornecedorSeeder::class); //Chama o próximo Seed
     }
 }
